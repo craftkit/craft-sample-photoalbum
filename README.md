@@ -1,9 +1,9 @@
 
-# Craft-UIKit demo app
+# Photo album
 
-Photo album application.
+Craft-UIKit sample application
 
-![demo](...)
+![capture](https://user-images.githubusercontent.com/4404088/54261343-e4659780-45ae-11e9-8d64-95d89b9eed7a.gif)
 
 ``` 
 npm install
