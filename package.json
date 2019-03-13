@@ -1,0 +1,22 @@
+{
+  "name": "@craftkit/craft-uikit-demoapp",
+  "version": "1.0.0",
+  "description": "Photo Album : Sample application for Craft-UIKit",
+  "main": "",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "webpack --config config/webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node server/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "craft-uikit": "https://github.com/craftkit/craft-uikit",
+    "craft-widget-navigationgroup": "https://github.com/craftkit/craft-widget-navigationgroup",
+    "craft-widget-quicktools": "https://github.com/craftkit/craft-widget-quicktools"
+  }
+}
