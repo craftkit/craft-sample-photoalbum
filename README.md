@@ -53,6 +53,7 @@ npm run serve /path/to/cert /path/to/key lib
 
 ## License
 
-MIT
+* code: MIT
+* included photo: see each license description in app
 
 
