@@ -15,10 +15,7 @@ export class Photo extends Craft.Widget.NavigationGroup.Page {
 	constructor(options){
 		super();
 		
-		this.basepathname = window.location.pathname;
-		if( !this.basepathname.match(/\/$/) ){
-			this.basepathname = this.basepathname + '/';
-		}
+		this.basepathname = Tools.getBasepathname();
 		
 		this.packagename = 'Demo.Album.Photo';
 		this.photoId     = options.photoId;
