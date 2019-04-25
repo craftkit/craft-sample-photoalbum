@@ -84,7 +84,7 @@ export class Wall extends Craft.Widget.NavigationGroup.Page {
 	}
 	
 	load(callback){
-		Tools.ajax("/data/list.json",(data) => {
+		Tools.get("data/list.json",(data) => {
 			this.list = JSON.parse(data);
 			callback();
 		});

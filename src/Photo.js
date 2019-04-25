@@ -41,7 +41,7 @@ export class Photo extends Craft.Widget.NavigationGroup.Page {
 		
 		this.shadow.getElementById('root').addEventListener('scroll',this.scrollListener);
 		
-		Tools.ajax("/data/"+this.photoId+".json",(data) => {
+		Tools.get("data/"+this.photoId+".json",(data) => {
 			this.photo = JSON.parse(data);
 			
 			this.shadow.getElementById('photo').innerHTML = this.templatePhoto(this.componentId);
@@ -136,7 +136,7 @@ export class Photo extends Craft.Widget.NavigationGroup.Page {
 	templatePhoto(componentId){
 		return `
 			<div>
-				<img src="/photo/${this.photo.image}" width="100%">
+				<img src="photo/${this.photo.image}" width="100%">
 			</div>
 			<div>
 				shot by : <span class="leave" onclick="${componentId}.showLeaveDialog('${this.photo.page}')" title="${this.photo.page}">${this.photo.photographer}</span><br>

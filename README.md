@@ -7,19 +7,16 @@ Craft-UIKit sample application
 
 ``` 
 npm install
-npm run serve
+npm run serve /path/to/cert /path/to/key
 
 go: http(s)://127.0.0.1:10088/
 ``` 
 
-./src: usual ES6 application, can be build by:
+To rebuild:
 
 ``` 
 webpack --config config/webpack.config.min.js
 ``` 
-
-./lib: can be run as is via `server/web/index.lib.html`.
-
 
 ## Using:
 
@@ -30,26 +27,27 @@ webpack --config config/webpack.config.min.js
 
 ## How to use
 
-Run unsecure server.
+You need to pass your local ssl cert and key, like by using [mkcert](https://github.com/FiloSottile/mkcert).
+
+There are two server scripts.
+
+One is `server_dummy.js` simulating github pages: 
 
 ``` 
-npm run serve
-``` 
+$ npm run serve /path/to/cert /path/to/key
 
-Run with your certificate.
+or 
 
-``` 
-npm run serve /path/to/cert /path/to/key
-``` 
-
-above are all run with ./src
-
-To run with ./lib:
+$ node server_dummy.js /path/to/cert /path/to/key
 
 ``` 
-npm run serve /path/to/cert /path/to/key lib
-``` 
 
+One is `server_local.js` you can post a comment.
+
+
+``` 
+$ node server_local.js /path/to/cert /path/to/key
+``` 
 
 ## License
 

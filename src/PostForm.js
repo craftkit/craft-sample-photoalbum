@@ -35,7 +35,7 @@ export class PostForm extends Craft.Widget.NavigationGroup.Page {
 			message : this.shadow.getElementById("message").value,
 			photoId : this.photoId
 		});
-		Tools.post("/comments",message,(comments) => {
+		Tools.post("comments",message,(comments) => {
 			Craft.Core.NotificationCenter.notify("should_update_comment");
 			this.closeHandler();
 			if( callback ){ callback(); }
