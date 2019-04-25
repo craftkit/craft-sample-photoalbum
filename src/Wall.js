@@ -15,8 +15,13 @@ export class Wall extends Craft.Widget.NavigationGroup.Page {
 	constructor(options){
 		super();
 		
+		this.basepathname = window.location.pathname;
+		if( !this.basepathname.match(/\/$/) ){
+			this.basepathname = this.basepathname + '/';
+		}
+		
 		this.packagename = 'Demo.Album.Wall';
-		this.path        = '/#/Wall/';
+		this.path        =  this.basepathname + '#/Wall/';
 		this.list        = ''; // list of photo got from the remote api
 		this.Thumbs      = {}; // photo.id to Thumb instance map
 		
@@ -119,12 +124,12 @@ export class Wall extends Craft.Widget.NavigationGroup.Page {
 		if( direction == 'asc' ){
 			this.list.sort( (a,b) => { return Number(a.id) - Number(b.id); } );
 			this.direction = "asc";
-			this.path = "/#/Wall/?sort=asc";
+			this.path = this.basepathname + "#/Wall/?sort=asc";
 			document.title = "Photo Album : Wall (asc)";
 		}else{
 			this.list.sort( (a,b) => { return Number(b.id) - Number(a.id); } );
 			this.direction = "desc";
-			this.path = "/#/Wall/?sort=desc";
+			this.path = this.basepathname + "#/Wall/?sort=desc";
 			document.title = "Photo Album : Wall (desc)";
 		}
 		this.deployThumbs(this.list);

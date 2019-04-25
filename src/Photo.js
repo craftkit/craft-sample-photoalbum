@@ -15,11 +15,16 @@ export class Photo extends Craft.Widget.NavigationGroup.Page {
 	constructor(options){
 		super();
 		
+		this.basepathname = window.location.pathname;
+		if( !this.basepathname.match(/\/$/) ){
+			this.basepathname = this.basepathname + '/';
+		}
+		
 		this.packagename = 'Demo.Album.Photo';
 		this.photoId     = options.photoId;
 		this.photo       = ''; // photo definition get from remote api
 		this.comments    = ''; // instance of Demo.Album.Comments
-		this.path        = '/#/Photo/' + this.photoId;
+		this.path        = this.basepathname + '#/Photo/' + this.photoId;
 		
 		// prepare use of ActionPanel
 		this.scrollListener = () => {
