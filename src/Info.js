@@ -6,6 +6,7 @@ Craft.usePackage(NavigationGroup);
 Craft.usePackage(QuickTools);
 
 import { LeaveDialogProtocol } from './LeaveDialogProtocol.js';
+import { Tools } from './Tools.js';
 
 export class Info extends Craft.Widget.NavigationGroup.Page {
 	
