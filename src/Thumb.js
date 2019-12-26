@@ -10,7 +10,7 @@ export class Thumb extends Craft.UI.View {
 	}
 	
 	openPhoto(id){
-		this.viewController.open(new Demo.Album.Photo({ photoId:id }));
+		this.viewController.open({page:new Demo.Album.Photo({ photoId:id })});
 	}
 	
 	style(componentId){

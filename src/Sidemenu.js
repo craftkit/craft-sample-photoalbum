@@ -13,13 +13,13 @@ export class Sidemenu extends Craft.UI.View {
 	
 	openWall(){
 		let component = new Wall({});
-		Craft.Core.Context.getRootViewController().open(component);
+		Craft.Core.Context.getRootViewController().open({page:component});
 		Craft.Core.Context.getRootViewController().toggleSidemenu();
 	}
 	
 	openInfo(){
 		let component = new Info({});
-		Craft.Core.Context.getRootViewController().open(component);
+		Craft.Core.Context.getRootViewController().open({page:component});
 		Craft.Core.Context.getRootViewController().toggleSidemenu();
 	}
 	

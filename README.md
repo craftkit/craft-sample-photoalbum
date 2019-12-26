@@ -20,7 +20,7 @@ go: http(s)://127.0.0.1:10088/
 To rebuild:
 
 ``` 
-webpack --config config/webpack.config.min.js
+webpack --config config/webpack.config.js
 ``` 
 
 ## This demo using:

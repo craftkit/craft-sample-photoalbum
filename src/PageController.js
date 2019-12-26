@@ -22,7 +22,10 @@ export class PageController extends Craft.Widget.NavigationGroup.ViewController 
 		if(callback){ callback(); }
 	}
 	
-	resolveRoutingRequest(path,event){
+	resolveRoutingRequest(route){
+		let path  = route.path;
+		let event = route.event;
+		
 		if( !path ){ path = ''; }
 		
 		let type     = '';
@@ -48,7 +51,7 @@ export class PageController extends Craft.Widget.NavigationGroup.ViewController 
 				component = new Photo({
 					photoId : argument,
 				});
-				this.open(component);
+				this.open({page:component,route:route});
 				
 				break;
 				
@@ -59,7 +62,7 @@ export class PageController extends Craft.Widget.NavigationGroup.ViewController 
 				component = new Wall({
 					query : query,
 				});
-				this.open(component);
+				this.open({page:component,route:route});
 				
 				break;
 				
@@ -69,14 +72,14 @@ export class PageController extends Craft.Widget.NavigationGroup.ViewController 
 				// #/Info/
 				// 
 				component = new Info({});
-				this.open(component);
+				this.open({page:component,route:route});
 				
 				break;
 				
 			default:
 				
 				component = new Wall({});
-				this.open(component);
+				this.open({page:component,route:route});
 				
 				break;
 			

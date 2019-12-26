@@ -136,7 +136,7 @@ export class Wall extends Craft.Widget.NavigationGroup.Page {
 		let component = new Photo({
 			photoId : id,
 		});
-		Craft.Core.Context.getRootViewController().open(component);
+		Craft.Core.Context.getRootViewController().open({page:component});
 	}
 	
 	openActionSheet(){

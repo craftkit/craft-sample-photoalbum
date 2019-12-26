@@ -5,9 +5,9 @@
 // usage:
 // 
 //   non secure: 
-//     node server.js
+//     node server_local.js
 //   secure:
-//     node server.js [/path/to/cert /path/to/key]
+//     node server_local.js [/path/to/cert /path/to/key]
 // 
 
 "use strict";
