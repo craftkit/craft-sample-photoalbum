@@ -1,6 +1,6 @@
 {
   "name": "@craftkit/craft-uikit-demoapp",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Photo Album : Sample application for Craft-UIKit",
   "main": "",
   "directories": {
@@ -10,7 +10,18 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "node server_local.js"
   },
-  "keywords": [],
+  "keywords": [
+  	"WebComponents",
+  	"Shadow DOM",
+  	"OOP",
+  	"SPA",
+  	"PWA",
+  	"frontend",
+	"UI widget",
+	"Stack navigation",
+	"NavigationGruop",
+	"Demo"
+  ],
   "author": "",
   "license": "MIT",
   "dependencies": {
