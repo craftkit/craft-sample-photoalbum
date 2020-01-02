@@ -1,5 +1,5 @@
 
-import * as Craft from 'craft-uikit';
+import * as Craft from '@craftkit/craft-uikit';
 
 import { Wall } from './Wall.js';
 import { Info } from './Info.js';

@@ -1,7 +1,7 @@
 
-import * as Craft from 'craft-uikit';
-import * as NavigationGroup from 'craft-widget-navigationgroup';
-import * as QuickTools from 'craft-widget-quicktools';
+import * as Craft from '@craftkit/craft-uikit';
+import * as NavigationGroup from '@craftkit/craft-widget-navigationgroup';
+import * as QuickTools from '@craftkit/craft-widget-quicktools';
 Craft.usePackage(NavigationGroup);
 Craft.usePackage(QuickTools);
 

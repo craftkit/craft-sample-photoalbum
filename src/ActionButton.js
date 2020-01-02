@@ -1,6 +1,6 @@
 
-import * as Craft from 'craft-uikit';
-import * as QuickTools from 'craft-widget-quicktools';
+import * as Craft from '@craftkit/craft-uikit';
+import * as QuickTools from '@craftkit/craft-widget-quicktools';
 Craft.usePackage(QuickTools);
 
 import { Config } from './Config.js';

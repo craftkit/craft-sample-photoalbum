@@ -3,7 +3,7 @@
 // PhotoAlbum App booter
 // 
 
-import * as Craft from 'craft-uikit';
+import * as Craft from '@craftkit/craft-uikit';
 
 import { PageController } from './PageController.js';
 import { Sidemenu } from './Sidemenu.js';

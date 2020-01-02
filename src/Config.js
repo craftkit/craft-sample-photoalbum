@@ -3,7 +3,7 @@
 // PhotoAlbum App definition
 // 
 
-import * as Craft from 'craft-uikit';
+import * as Craft from '@craftkit/craft-uikit';
 
 export var Config = {
 	

@@ -1,6 +1,6 @@
 
-import * as Craft from 'craft-uikit';
-import * as NavigationGroup from 'craft-widget-navigationgroup';
+import * as Craft from '@craftkit/craft-uikit';
+import * as NavigationGroup from '@craftkit/craft-widget-navigationgroup';
 Craft.usePackage(NavigationGroup);
 
 import { Config } from './Config.js';
