@@ -53,7 +53,7 @@ export class CommentList extends Craft.UI.View {
 	
 	load(callback){
 		let target = this.photoId + ".json";
-		Tools.get("comments/"+target,(comments) => {
+		Tools.get("/comments/"+target,(comments) => {
 			if( comments ){
 				this.comments = JSON.parse(comments);
 			}

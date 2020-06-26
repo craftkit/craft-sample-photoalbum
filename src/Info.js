@@ -16,7 +16,7 @@ export class Info extends Craft.Widget.NavigationGroup.Page {
 		this.basepathname = Tools.getBasepathname();
 		
 		this.packagename = 'Demo.Album.Info';
-		this.path        = this.basepathname + "#/Info/";
+		this.path        = "/Info";
 		
 		this.github_page = 'https://github.com/craftkit/craft-uikit';
 		

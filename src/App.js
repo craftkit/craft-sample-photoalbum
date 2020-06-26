@@ -10,6 +10,9 @@ import { Sidemenu } from './Sidemenu.js';
 
 export var App = {
 	
+	router : Craft.Core.HashRouter,
+	//router : Craft.Core.PathRouter,
+	
 	didBootApplication : function(env){
 		
 		Craft.Core.Defaults.BASE_DIV_NAME = 'CraftRoot';

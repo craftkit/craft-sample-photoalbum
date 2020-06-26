@@ -54,7 +54,7 @@ export class Thumb extends Craft.UI.View {
 	template(componentId){
 		let photo = this.photo;
 		return `
-			<div class="root" onclick="${componentId}.openPhoto('${photo.id}');" style="background:url(photo/${photo.img}) center; background-size:cover;">
+			<div class="root" onclick="${componentId}.openPhoto('${photo.id}');" style="background:url(/photo/${photo.img}) center; background-size:cover;">
 				<div class="mask">
 					<div class="text">
 						&copy; ${photo.photographer}

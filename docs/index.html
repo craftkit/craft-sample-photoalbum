@@ -10,17 +10,12 @@
 	
 	<title>Photo Album</title>
 	
-	<link rel="manifest" href="manifest.json">
-	<script>
-		if( 'serviceWorker' in navigator ){
-			navigator.serviceWorker.register('script/sw.js').then( function(){ console.log('Service Worker Registered'); });
-		}
-	</script>
+	<link rel="manifest" href="/manifest.json">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<style>html,body { width:100vw; height:100vh; overflow:hidden; overscroll-behavior-y:none; box-sizing:border-box; margin:0; padding:0; background-color:#f5f5f7; font-family:sans-serif }</style>
 	
 	<!-- boot demo app -->
-	<script src="script/demo.album.js"></script>
+	<script src="/script/demo.album.js"></script>
 	<script>
 		window.onload = function(){
 			Craft.Core.Bootstrap.boot(Demo.Album.App);

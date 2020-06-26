@@ -1,6 +1,6 @@
 {
   "name": "@craftkit/craft-uikit-demoapp",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "Photo Album : Sample application for Craft-UIKit",
   "main": "",
   "directories": {},
@@ -24,8 +24,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@craftkit/craft-uikit": "^2.x",
-    "@craftkit/craft-widget-navigationgroup": "^2.x",
-    "@craftkit/craft-widget-quicktools": "^2.x"
+    "@craftkit/craft-uikit": "*",
+    "@craftkit/craft-widget-navigationgroup": "*",
+    "@craftkit/craft-widget-quicktools": "*"
   }
 }

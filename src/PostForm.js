@@ -13,6 +13,7 @@ export class PostForm extends Craft.Widget.NavigationGroup.Page {
 		super();
 		this.packagename = 'Demo.Album.PostForm';
 		
+		this.path         = ''; // dont update url
 		this.photoId      = options.photoId;
 		this.closeHandler = options.closeHandler;
 	}

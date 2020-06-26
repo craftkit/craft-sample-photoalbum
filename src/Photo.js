@@ -21,7 +21,7 @@ export class Photo extends Craft.Widget.NavigationGroup.Page {
 		this.photoId     = options.photoId;
 		this.photo       = ''; // photo definition get from remote api
 		this.comments    = ''; // instance of Demo.Album.Comments
-		this.path        = this.basepathname + '#/Photo/' + this.photoId;
+		this.path        = '/Photo/' + this.photoId;
 		
 		// prepare use of ActionPanel
 		this.scrollListener = () => {
@@ -43,7 +43,7 @@ export class Photo extends Craft.Widget.NavigationGroup.Page {
 		
 		this.shadow.getElementById('root').addEventListener('scroll',this.scrollListener);
 		
-		Tools.get("data/"+this.photoId+".json",(data) => {
+		Tools.get("/data/"+this.photoId+".json",(data) => {
 			this.photo = JSON.parse(data);
 			
 			this.shadow.getElementById('photo').innerHTML = this.templatePhoto(this.componentId);
@@ -138,7 +138,7 @@ export class Photo extends Craft.Widget.NavigationGroup.Page {
 	templatePhoto(componentId){
 		return `
 			<div>
-				<img src="photo/${this.photo.image}" width="100%">
+				<img src="/photo/${this.photo.image}" width="100%">
 			</div>
 			<div>
 				shot by : <span class="leave" onclick="${componentId}.showLeaveDialog('${this.photo.page}')" title="${this.photo.page}">${this.photo.photographer}</span><br>
