@@ -32,10 +32,10 @@ export class PageController extends Craft.Widget.NavigationGroup.ViewController 
 		let argument = '';
 		let query    = '';
 		
-		let match = path.match(/(\w*)\/([^\s\?]*)[\/\?]*(.*)/);
+		let match = path.match(/(\w*)\/?([^\s\?]*)[\/\?]*(.*)/);
 		
 		if( match ){
-			type     = match[1]; // Wall|Photo
+			type     = match[1]; // Wall|Photo|Info
 			argument = match[2]; // should be photo_id
 			query    = match[3]; // should be search query for Wall
 		}
