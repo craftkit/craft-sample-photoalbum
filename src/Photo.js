@@ -15,8 +15,6 @@ export class Photo extends Craft.Widget.NavigationGroup.Page {
 	constructor(options){
 		super();
 		
-		this.basepathname = Tools.getBasepathname();
-		
 		this.packagename = 'Demo.Album.Photo';
 		this.photoId     = options.photoId;
 		this.photo       = ''; // photo definition get from remote api

@@ -46,7 +46,7 @@ export class PageController extends Craft.Widget.NavigationGroup.ViewController 
 			
 			case 'Photo':
 				// 
-				// #/Photo/<argument>
+				// /Photo/<argument>
 				// 
 				component = new Photo({
 					photoId : argument,
@@ -57,7 +57,7 @@ export class PageController extends Craft.Widget.NavigationGroup.ViewController 
 				
 			case 'Wall':
 				// 
-				// #/Wall?<query>
+				// /Wall?<query>
 				// 
 				component = new Wall({
 					query : query,
@@ -69,7 +69,7 @@ export class PageController extends Craft.Widget.NavigationGroup.ViewController 
 			case 'Info':
 				
 				// 
-				// #/Info/
+				// /Info/
 				// 
 				component = new Info({});
 				this.open({page:component,route:route});

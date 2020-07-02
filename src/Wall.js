@@ -15,8 +15,6 @@ export class Wall extends Craft.Widget.NavigationGroup.Page {
 	constructor(options){
 		super();
 		
-		this.basepathname = Tools.getBasepathname();
-		
 		this.packagename = 'Demo.Album.Wall';
 		this.path        = '/Wall';
 		this.list        = ''; // list of photo got from the remote api

@@ -13,8 +13,6 @@ export class Info extends Craft.Widget.NavigationGroup.Page {
 	constructor(options){
 		super();
 		
-		this.basepathname = Tools.getBasepathname();
-		
 		this.packagename = 'Demo.Album.Info';
 		this.path        = "/Info";
 		

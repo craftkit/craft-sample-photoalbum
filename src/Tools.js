@@ -23,17 +23,6 @@ export var Tools = {
 	
 	KEYCODE : {
 		ESC : 27,
-	},
-	
-	getBasepathname : function(){
-		let basepathname = window.location.pathname;
-		if( basepathname.match(/\.html/) ){
-			basepathname = basepathname.substr(0,basepathname.lastIndexOf('/'));
-		}
-		if( !basepathname.match(/\/$/) ){
-			basepathname = basepathname + '/';
-		}
-		return basepathname;
 	}
 	
 };
